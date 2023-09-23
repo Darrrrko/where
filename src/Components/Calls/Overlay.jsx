@@ -60,7 +60,7 @@ function Overlay() {
               alt=""
             />
             <h2 className="text-black text-3xl font-bold font-['Space Grotesk'] leading-10 tracking-wide">
-              Travelad Crypto Hub
+              Where is dev?{" "}
             </h2>
             <p className="text-black text-sm font-normal font-['Space Grotesk'] leading-tight tracking-tight">
               You have a video call
