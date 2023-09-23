@@ -23,7 +23,7 @@ function Overlay() {
     const startInterval = () => {
       intervalId = setInterval(() => {
         setYes((prevYes) => !prevYes);
-      }, 10000);
+      }, 1000 * 20);
     };
 
     // Check if check is true after each click
