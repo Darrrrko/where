@@ -7,9 +7,12 @@ import Overlay from "./Components/Calls/Overlay";
 function App() {
   return (
     <>
-      <main clas sName="overflow-hidden w-full min-h-screen relative font-spaceGrotesk">
+      <main
+        clas
+        sName="overflow-hidden w-full min-h-screen relative font-spaceGrotesk"
+      >
         <Overlay />
-        <div className="h-screen w-full relative flex justify-betwee">
+        <div className="min-h-screen overflow-x-hidden lg:h-screen w-full relative flex flex-col lg:flex-row justify-betwee">
           <Header />
           <Message />
           <ChatBox />

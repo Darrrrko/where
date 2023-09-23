@@ -5,7 +5,7 @@ import Logo from "../assets/images/logo.png";
 
 function Header() {
   return (
-    <header className="w-[70px] h-screen bg-[#419FD9] py-10">
+    <header className="w-[70px] hidden lg:block  h-screen bg-[#419FD9] py-10">
       <div className="container flex flex-col gap-5 text-white">
         <img src={Logo} />
         <div className="flex flex-col items-center justify-center gap-6 mt-10">

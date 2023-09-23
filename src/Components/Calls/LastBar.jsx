@@ -2,8 +2,9 @@ import React from "react";
 
 function LastBar() {
   return (
-    <div className=" px-8 py-10 w-[20%] flex flex-col justify-between ">
-      <div className="w-14 h-6 justify-start ml-auto items-start gap-3 inline-flex">
+    <div className=" lg:px-8 py-10 w-full lg:w-[20%] lg:flex flex-col justify-betwee
+    n ">
+      <div className="justify-start ml-auto items-start gap-3 hidden lg:inline-flex ">
         <div className="w-6 h-6 relative">
           <svg
             width="24"
@@ -36,7 +37,7 @@ function LastBar() {
           </svg>
         </div>
       </div>{" "}
-      <div className="flex flex-col mt-10 gap-8 overflow-scroll">
+      <div className="lg:flex hidden flex-col mt-10 gap-8 overflow-scroll">
         <article className=" items-center">
           <div className="flex items-center gap-3 w-full">
             <img src={"/persons/person1.svg"} />
@@ -272,7 +273,7 @@ function LastBar() {
           </div>
         </article>{" "}
       </div>
-      <div className="w-64 h-28 justify-center items-center gap-8 inline-flex">
+      <div className="w-full bg-white lg:w-auto absolute bottom-0 justify-center items-center gap-8 inline-flex">
         <div className="flex-col justify-start items-center gap-2 inline-flex">
           <div className="w-14 h-14 p-4 bg-sky-950 rounded-full shadow justify-center items-center inline-flex">
             <div className="w-6 h-6 relative flex-col justify-start items-start flex">

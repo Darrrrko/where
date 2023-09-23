@@ -9,7 +9,7 @@ import record from "../assets//icons/record.svg";
 
 function ChatBox() {
   return (
-    <section className=" w-full bg-blue-100 h-screen bg-[url(/Bg.svg)] bg-repeat flex flex-col justify-between  relative py-0">
+    <section className=" w-full hidden lg:flex bg-blue-100 h-screen bg-[url(/Bg.svg)] bg-repeat flex-col justify-between  relative py-0">
       <header className="w-full bg-white py-4 px-6 container  top-0 right-0">
         <div className=" flex justify-between items-center">
           <article className="flex flex-col gap-2">

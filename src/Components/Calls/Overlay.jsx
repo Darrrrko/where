@@ -39,8 +39,8 @@ function Overlay() {
 
   if (yes) {
     return (
-      <section className="absolute z-10 w-full right-0 top-0 h-screen bg-[#fff]">
-        <div className="h-screen w-full relative flex justify-betwee">
+      <section className="absolute z-10 w-full right-0 top-0 h-screen overflow-x-hidden bg-[#fff]">
+        <div className="h-screen w-full relative flex justify-betwee flex-col lg:flex-row">
           <Header />
           <Live />
           <LastBar />
