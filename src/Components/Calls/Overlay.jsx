@@ -8,22 +8,34 @@ import LastBar from "./LastBar";
 
 function Overlay() {
   const [yes, setYes] = useState(false);
+  const [check, setCheck] = useState(false);
+
   useEffect(() => {
     // Event listener to set yes to true on window click
     const handleClick = () => {
       setYes(true);
+      setCheck(true);
     };
     window.addEventListener("click", handleClick);
 
-    const interval = setInterval(() => {
-      setYes((prevYes) => !prevYes);
-    }, 10000);
+    // Use setTimeout to start the interval only when check becomes true
+    let intervalId;
+    const startInterval = () => {
+      intervalId = setInterval(() => {
+        setYes((prevYes) => !prevYes);
+      }, 10000);
+    };
+
+    // Check if check is true after each click
+    if (check) {
+      startInterval();
+    }
 
     return () => {
       window.removeEventListener("click", handleClick);
-      clearInterval(interval);
+      clearInterval(intervalId);
     };
-  }, []);
+  }, [check]);
 
   if (yes) {
     return (
