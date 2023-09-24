@@ -36,7 +36,7 @@ function ChatBox() {
         rem provident tempora. Nulla libero molestias unde, ratione illum
         perspiciatis."
             link="facebook.com"
-            img="/persons/person3.svg"
+            img="/chart.png"
           />
           <Banner
             name="Vegito Calls"

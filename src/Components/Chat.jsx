@@ -30,7 +30,3 @@ Chat.defaultProps = {
 };
 
 export default Chat;
-
-export function getServerSideProps() {
-  return { props: {} };
-}

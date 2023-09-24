@@ -4,7 +4,7 @@ function Banner(Props) {
       <h1 className="text-blue-500 text-xm font-bold font-['Space Grotesk'] leading-7 tracking-tight">
         {Props.name}
       </h1>{" "}
-      <img src={Props.img} alt="" />
+      <img src={Props.img} alt="" className="w-full md:max-w-[400px]" />
       <p className="max-w-[400px] text-black text-sm font-normal font-['Space Grotesk'] leading-tight tracking-tight">
         {Props.text}
       </p>
