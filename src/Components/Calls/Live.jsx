@@ -5,7 +5,7 @@ function Live() {
     <section className="h-screen w-full lg:w-[70%] flex pt-5 overflow-scroll shadow-[0px 4px 4px 0px] shadow-[rgba(0, 0, 0, 0.25)] pr-5 flex-col items-center">
       <div className="flex-col justify-start items-center inline-flex">
         <h1 className="text-black text-xl font-bold font-['Space Grotesk'] leading-7 tracking-tight">
-          Travelad Crypto Hub
+          Where is dev?{" "}
         </h1>
         <h5 className="text-black text-xl font-normal font-['Space Grotesk'] leading-7 tracking-tight">
           6 Participant
