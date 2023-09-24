@@ -4,7 +4,7 @@ function Chat(Props) {
       <div className="flex items-center gap-3 w-full">
         <img
           src={`${Props.img}`}
-          className="h-14 w-14 rounded-full object-cover "
+          className="h-14 w-14 rounded-full object-cover object-top"
         />
         <div className="flex flex-col gap-2">
           <h1 className="text-black text-xm font-medium font-['Space Grotesk'] leading-tight tracking-tight">
