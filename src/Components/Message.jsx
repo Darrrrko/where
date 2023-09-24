@@ -32,29 +32,29 @@ function Message() {
           <Chat name="Aeon’s Gems" text="Any Plan? " img="/callers/aeon.png" />
           <Chat
             name=" Kingdom of x100 CALLS"
-            text="Any Plan? "
+            text="Calling now"
             img="/callers/kingdom.png"
           />
           <Chat
             name=" KOBE’S CALLS"
-            text="Any Plan? "
+            text="This is SENDING"
             num={2}
             img="/callers/kobe.png"
           />
           <Chat
             name="Maythous Calls"
-            text="Any Plan? "
+            text="I’ll tell Caesar this is insidoor"
             img="/callers/maythous.png"
           />
           <Chat
             name="Luffy’s gem calls"
-            text="Any Plan? "
+            text="Updating call now "
             num={3}
             img="/callers/luffy.png"
           />
           <Chat
             name=" Catfish Calls by Poe"
-            text="Any Plan? "
+            text="Any Plan?Big dick energy "
             img="/callers/poe.png"
           />
           <Chat
