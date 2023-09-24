@@ -37,12 +37,14 @@ function Overlay({ pause }) {
     sec.current.addEventListener("click", () => {
       setYes(true);
       pause();
-      const playNextAudio = () => {
+      const playNextAudio = async () => {
         if (currentAudioIndexRef.current < audioFiles.length) {
-          const audio = new Audio(audioFiles[currentAudioIndexRef.current]);
-          audioRef.current = audio;
-          audio.onended = handleAudioEnded;
-          audio.play();
+          const audio = await new Audio(
+            audioFiles[currentAudioIndexRef.current]
+          );
+          audioRef.current = await audio;
+          audio.onended = await handleAudioEnded;
+          await audio.play();
         }
       };
 
