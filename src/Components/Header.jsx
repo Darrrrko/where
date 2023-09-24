@@ -13,11 +13,17 @@ function Header() {
             <img src={Home} />
             Home
           </a>
-          <a href="" className="flex justify-center items-center flex-col">
+          <a
+            href="https://t.me/WhereisdevETH"
+            className="flex justify-center items-center flex-col"
+          >
             <img src={Telegram} />
             Telegram
           </a>{" "}
-          <a href="" className="flex justify-center items-center flex-col">
+          <a
+            href="https://twitter.com/WhereisdevETH"
+            className="flex justify-center items-center flex-col"
+          >
             <img src={Twitter} />
             Twitter
           </a>
