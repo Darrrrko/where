@@ -12,47 +12,57 @@ function Message() {
         />
 
         <div className={`py-10 flex flex-col gap-4 scroll`}>
-          <Chat name="CaesarCalls" text="This is 🔥 " />
-          <Chat name="Gambles 🎲 MadApes" text="Im Fucking Hype " num={1} />
           <Chat
-            name="Pow’s Gem Calls
-"
+            name="CaesarCalls"
+            text="This is 🔥 "
+            img="/callers/caesar.png"
+          />
+          <Chat
+            name="Gambles 🎲 MadApes"
+            text="Im Fucking Hype "
+            num={1}
+            img="/callers/madapes.png"
+          />
+          <Chat
+            name="Pow’s Gem Calls"
             text="Yo where are u? "
             num={6}
+            img="/callers/pow.png"
           />
+          <Chat name="Aeon’s Gems" text="Any Plan? " img="/callers/aeon.png" />
           <Chat
-            name="Aeon’s Gems
-"
+            name=" Kingdom of x100 CALLS"
             text="Any Plan? "
+            img="/callers/kingdom.png"
           />
           <Chat
-            name=" Kingdom of x100 CALLS
-"
-            text="Any Plan? "
-          />
-          <Chat
-            name=" KOBE’S CALLS
-"
+            name=" KOBE’S CALLS"
             text="Any Plan? "
             num={2}
+            img="/callers/kobe.png"
           />
           <Chat
-            name="Maythous Calls
-"
+            name="Maythous Calls"
             text="Any Plan? "
+            img="/callers/maythous.png"
           />
           <Chat
-            name="Luffy’s gem calls
-"
+            name="Luffy’s gem calls"
             text="Any Plan? "
             num={3}
+            img="/callers/luffy.png"
           />
           <Chat
-            name=" Catfish Calls by Poe
-"
+            name=" Catfish Calls by Poe"
             text="Any Plan? "
+            img="/callers/poe.png"
           />
-          <Chat name="goobygambles" text="Any Plan? " num={1} />
+          <Chat
+            name="goobygambles"
+            text="Any Plan? "
+            num={1}
+            img="/callers/gooby.png"
+          />
         </div>
       </div>
     </section>

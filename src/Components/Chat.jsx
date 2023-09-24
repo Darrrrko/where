@@ -2,7 +2,10 @@ function Chat(Props) {
   return (
     <article className="w-full  items-center">
       <div className="flex items-center gap-3 w-full">
-        <img src={"/persons/person1.svg"} />
+        <img
+          src={`${Props.img}`}
+          className="h-14 w-14 rounded-full object-cover "
+        />
         <div className="flex flex-col gap-2">
           <h1 className="text-black text-xm font-medium font-['Space Grotesk'] leading-tight tracking-tight">
             {Props.name}
