@@ -9,7 +9,7 @@ function Banner(Props) {
         {Props.text}
       </p>
       <a
-        href="https://twitter.com/solarxcoin/status/1687163418518700032?s=46&t=2daIS9cmcPy6gCI6VVIn2Q"
+        href={`https://${Props.link}`}
         className=" text-blue-500 text-xs font-normal font-['Space Grotesk'] leading-none tracking-tight"
       >
         {Props.link}

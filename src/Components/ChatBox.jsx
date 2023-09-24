@@ -32,10 +32,8 @@ function ChatBox() {
         <div className="container px-8 py-10 flex flex-col gap-16">
           <Banner
             name="Gambles 🎲 MadApes"
-            text="    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi culpa
-        rem provident tempora. Nulla libero molestias unde, ratione illum
-        perspiciatis."
-            link="facebook.com"
+            text="    IT’S FUCKING MOONING BOYS LFG RUN THIS UP🔥"
+            link="dexscreener.com"
             img="/chart.png"
           />
           <Banner
