@@ -12,20 +12,47 @@ function Message() {
         />
 
         <div className={`py-10 flex flex-col gap-4 scroll`}>
-          <Chat name="Caesar Calls" text="This is 🔥 " />
-          <Chat name="MadApe Calls" text="Im Fucking Hype " num={1} />
-          <Chat name="Venom Calls" text="Yo where are u? " num={6} />
-          <Chat name="The Iron Man calls" text="Any Plan? " />
-          <Chat name="The Iron Man calls" text="Any Plan? " />
-          <Chat name="The Iron Man calls" text="Any Plan? " num={2} />
-          <Chat name="The Iron Man calls" text="Any Plan? " />
-          <Chat name="The Iron Man calls" text="Any Plan? " num={3} />
-          <Chat name="The Iron Man calls" text="Any Plan? " />
-          <Chat name="The Iron Man calls" text="Any Plan? " num={1} />
-          <Chat name="The Iron Man calls" text="Any Plan? " />
-          <Chat name="The Iron Man calls" text="Any Plan? " num={10} />
-          <Chat name="The Iron Man calls" text="Any Plan? " />
-          <Chat />
+          <Chat name="CaesarCalls" text="This is 🔥 " />
+          <Chat name="Gambles 🎲 MadApes" text="Im Fucking Hype " num={1} />
+          <Chat
+            name="Pow’s Gem Calls
+"
+            text="Yo where are u? "
+            num={6}
+          />
+          <Chat
+            name="Aeon’s Gems
+"
+            text="Any Plan? "
+          />
+          <Chat
+            name=" Kingdom of x100 CALLS
+"
+            text="Any Plan? "
+          />
+          <Chat
+            name=" KOBE’S CALLS
+"
+            text="Any Plan? "
+            num={2}
+          />
+          <Chat
+            name="Maythous Calls
+"
+            text="Any Plan? "
+          />
+          <Chat
+            name="Luffy’s gem calls
+"
+            text="Any Plan? "
+            num={3}
+          />
+          <Chat
+            name=" Catfish Calls by Poe
+"
+            text="Any Plan? "
+          />
+          <Chat name="goobygambles" text="Any Plan? " num={1} />
         </div>
       </div>
     </section>

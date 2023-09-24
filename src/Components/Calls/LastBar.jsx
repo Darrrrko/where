@@ -2,8 +2,10 @@ import React from "react";
 
 function LastBar() {
   return (
-    <div className=" lg:px-8 py-10 w-full lg:w-[20%] lg:flex flex-col justify-betwee
-    n ">
+    <div
+      className=" lg:px-8 py-10 w-full lg:w-[20%] lg:flex flex-col justify-betwee
+    n "
+    >
       <div className="justify-start ml-auto items-start gap-3 hidden lg:inline-flex ">
         <div className="w-6 h-6 relative">
           <svg
@@ -40,10 +42,13 @@ function LastBar() {
       <div className="lg:flex hidden flex-col mt-10 gap-8 overflow-scroll">
         <article className=" items-center">
           <div className="flex items-center gap-3 w-full">
-            <img src={"/persons/person1.svg"} />
+            <img
+              src={"/persons/person2.svg"}
+              className="h-12 w-12 rounded-full object-cover object-top"
+            />
             <div className="flex flex-col gap-2">
               <h1 className="text-black text-xm font-medium font-['Space Grotesk'] leading-tight tracking-tight">
-                Caesar Calls
+                Ajeet
               </h1>
               <p className="text-black text-xs font-normal font-['Space Grotesk'] leading-none tracking-tight">
                 Listening
@@ -79,10 +84,139 @@ function LastBar() {
         </article>
         <article className=" items-center">
           <div className="flex items-center gap-3 w-full">
-            <img src={"/persons/person1.svg"} />
+            <img
+              src={"/persons/person3.svg"}
+              className="h-12 w-12 rounded-full object-cover object-top"
+            />
             <div className="flex flex-col gap-2">
               <h1 className="text-black text-xm font-medium font-['Space Grotesk'] leading-tight tracking-tight">
-                Caesar Calls
+                Gaurav
+              </h1>
+              <p className="text-black text-xs font-normal font-['Space Grotesk'] leading-none tracking-tight">
+                Listening
+              </p>
+            </div>
+
+            <div className="w-8 ml-auto h-6 px-2.5 py-0.5 rounded-xl flex-col justify-center items-center gap-2.5 inline-flex">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.64" clip-path="url(#clip0_2970_4212)">
+                  <path
+                    d="M19.5 12C19.5 12.846 19.359 13.6605 19.101 14.4195L17.88 13.1985C17.9599 12.804 18.0001 12.4025 18 12V10.5C18 10.3011 18.079 10.1103 18.2197 9.96967C18.3603 9.82902 18.5511 9.75 18.75 9.75C18.9489 9.75 19.1397 9.82902 19.2803 9.96967C19.421 10.1103 19.5 10.3011 19.5 10.5V12ZM12 18C13.227 18 14.367 17.6325 15.318 16.9995L16.395 18.078C15.3242 18.8545 14.0663 19.3323 12.75 19.4625V22.5H17.25C17.4489 22.5 17.6397 22.579 17.7803 22.7197C17.921 22.8603 18 23.0511 18 23.25C18 23.4489 17.921 23.6397 17.7803 23.7803C17.6397 23.921 17.4489 24 17.25 24H6.75C6.55109 24 6.36032 23.921 6.21967 23.7803C6.07902 23.6397 6 23.4489 6 23.25C6 23.0511 6.07902 22.8603 6.21967 22.7197C6.36032 22.579 6.55109 22.5 6.75 22.5H11.25V19.4625C9.40003 19.2766 7.68506 18.4101 6.43782 17.0312C5.19058 15.6523 4.49998 13.8593 4.5 12V10.5C4.5 10.3011 4.57902 10.1103 4.71967 9.96967C4.86032 9.82902 5.05109 9.75 5.25 9.75C5.44891 9.75 5.63968 9.82902 5.78033 9.96967C5.92098 10.1103 6 10.3011 6 10.5V12C6 13.5913 6.63214 15.1174 7.75736 16.2426C8.88258 17.3679 10.4087 18 12 18ZM16.5 4.5V11.8185L7.737 3.0555C8.08041 2.04636 8.7708 1.19184 9.68525 0.644053C10.5997 0.0962669 11.6789 -0.10923 12.7307 0.0641455C13.7824 0.237521 14.7386 0.778518 15.4288 1.59082C16.1191 2.40313 16.4986 3.43403 16.5 4.5Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M14.2288 15.9105L7.49975 9.18V12C7.49952 12.788 7.7062 13.5622 8.09911 14.2452C8.49203 14.9282 9.05741 15.4961 9.7387 15.892C10.42 16.288 11.1933 16.4981 11.9813 16.5013C12.7692 16.5045 13.5442 16.3008 14.2288 15.9105ZM2.46875 2.031L20.4688 20.031L21.5308 18.969L3.53075 0.969002L2.46875 2.031Z"
+                    fill="black"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2970_4212">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </article>{" "}
+        <article className=" items-center">
+          <div className="flex items-center gap-3 w-full">
+            <img
+              src={"/persons/person6.svg"}
+              className="h-12 w-12 rounded-full object-cover object-top"
+            />
+            <div className="flex flex-col gap-2">
+              <h1 className="text-black text-xm font-medium font-['Space Grotesk'] leading-tight tracking-tight">
+                Labor
+              </h1>
+              <p className="text-black text-xs font-normal font-['Space Grotesk'] leading-none tracking-tight">
+                Listening
+              </p>
+            </div>
+
+            <div className="w-8 ml-auto h-6 px-2.5 py-0.5 rounded-xl flex-col justify-center items-center gap-2.5 inline-flex">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.64" clip-path="url(#clip0_2970_4212)">
+                  <path
+                    d="M19.5 12C19.5 12.846 19.359 13.6605 19.101 14.4195L17.88 13.1985C17.9599 12.804 18.0001 12.4025 18 12V10.5C18 10.3011 18.079 10.1103 18.2197 9.96967C18.3603 9.82902 18.5511 9.75 18.75 9.75C18.9489 9.75 19.1397 9.82902 19.2803 9.96967C19.421 10.1103 19.5 10.3011 19.5 10.5V12ZM12 18C13.227 18 14.367 17.6325 15.318 16.9995L16.395 18.078C15.3242 18.8545 14.0663 19.3323 12.75 19.4625V22.5H17.25C17.4489 22.5 17.6397 22.579 17.7803 22.7197C17.921 22.8603 18 23.0511 18 23.25C18 23.4489 17.921 23.6397 17.7803 23.7803C17.6397 23.921 17.4489 24 17.25 24H6.75C6.55109 24 6.36032 23.921 6.21967 23.7803C6.07902 23.6397 6 23.4489 6 23.25C6 23.0511 6.07902 22.8603 6.21967 22.7197C6.36032 22.579 6.55109 22.5 6.75 22.5H11.25V19.4625C9.40003 19.2766 7.68506 18.4101 6.43782 17.0312C5.19058 15.6523 4.49998 13.8593 4.5 12V10.5C4.5 10.3011 4.57902 10.1103 4.71967 9.96967C4.86032 9.82902 5.05109 9.75 5.25 9.75C5.44891 9.75 5.63968 9.82902 5.78033 9.96967C5.92098 10.1103 6 10.3011 6 10.5V12C6 13.5913 6.63214 15.1174 7.75736 16.2426C8.88258 17.3679 10.4087 18 12 18ZM16.5 4.5V11.8185L7.737 3.0555C8.08041 2.04636 8.7708 1.19184 9.68525 0.644053C10.5997 0.0962669 11.6789 -0.10923 12.7307 0.0641455C13.7824 0.237521 14.7386 0.778518 15.4288 1.59082C16.1191 2.40313 16.4986 3.43403 16.5 4.5Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M14.2288 15.9105L7.49975 9.18V12C7.49952 12.788 7.7062 13.5622 8.09911 14.2452C8.49203 14.9282 9.05741 15.4961 9.7387 15.892C10.42 16.288 11.1933 16.4981 11.9813 16.5013C12.7692 16.5045 13.5442 16.3008 14.2288 15.9105ZM2.46875 2.031L20.4688 20.031L21.5308 18.969L3.53075 0.969002L2.46875 2.031Z"
+                    fill="black"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2970_4212">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </article>{" "}
+        <article className=" items-center">
+          <div className="flex items-center gap-3 w-full">
+            <img
+              src={"/persons/person7.svg"}
+              className="h-12 w-12 rounded-full object-cover object-top"
+            />
+            <div className="flex flex-col gap-2">
+              <h1 className="text-black text-xm font-medium font-['Space Grotesk'] leading-tight tracking-tight">
+                Ishlank
+              </h1>
+              <p className="text-black text-xs font-normal font-['Space Grotesk'] leading-none tracking-tight">
+                Listening
+              </p>
+            </div>
+
+            <div className="w-8 ml-auto h-6 px-2.5 py-0.5 rounded-xl flex-col justify-center items-center gap-2.5 inline-flex">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.64" clip-path="url(#clip0_2970_4212)">
+                  <path
+                    d="M19.5 12C19.5 12.846 19.359 13.6605 19.101 14.4195L17.88 13.1985C17.9599 12.804 18.0001 12.4025 18 12V10.5C18 10.3011 18.079 10.1103 18.2197 9.96967C18.3603 9.82902 18.5511 9.75 18.75 9.75C18.9489 9.75 19.1397 9.82902 19.2803 9.96967C19.421 10.1103 19.5 10.3011 19.5 10.5V12ZM12 18C13.227 18 14.367 17.6325 15.318 16.9995L16.395 18.078C15.3242 18.8545 14.0663 19.3323 12.75 19.4625V22.5H17.25C17.4489 22.5 17.6397 22.579 17.7803 22.7197C17.921 22.8603 18 23.0511 18 23.25C18 23.4489 17.921 23.6397 17.7803 23.7803C17.6397 23.921 17.4489 24 17.25 24H6.75C6.55109 24 6.36032 23.921 6.21967 23.7803C6.07902 23.6397 6 23.4489 6 23.25C6 23.0511 6.07902 22.8603 6.21967 22.7197C6.36032 22.579 6.55109 22.5 6.75 22.5H11.25V19.4625C9.40003 19.2766 7.68506 18.4101 6.43782 17.0312C5.19058 15.6523 4.49998 13.8593 4.5 12V10.5C4.5 10.3011 4.57902 10.1103 4.71967 9.96967C4.86032 9.82902 5.05109 9.75 5.25 9.75C5.44891 9.75 5.63968 9.82902 5.78033 9.96967C5.92098 10.1103 6 10.3011 6 10.5V12C6 13.5913 6.63214 15.1174 7.75736 16.2426C8.88258 17.3679 10.4087 18 12 18ZM16.5 4.5V11.8185L7.737 3.0555C8.08041 2.04636 8.7708 1.19184 9.68525 0.644053C10.5997 0.0962669 11.6789 -0.10923 12.7307 0.0641455C13.7824 0.237521 14.7386 0.778518 15.4288 1.59082C16.1191 2.40313 16.4986 3.43403 16.5 4.5Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M14.2288 15.9105L7.49975 9.18V12C7.49952 12.788 7.7062 13.5622 8.09911 14.2452C8.49203 14.9282 9.05741 15.4961 9.7387 15.892C10.42 16.288 11.1933 16.4981 11.9813 16.5013C12.7692 16.5045 13.5442 16.3008 14.2288 15.9105ZM2.46875 2.031L20.4688 20.031L21.5308 18.969L3.53075 0.969002L2.46875 2.031Z"
+                    fill="black"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2970_4212">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </article>{" "}
+        <article className=" items-center">
+          <div className="flex items-center gap-3 w-full">
+            <img
+              src={"/persons/person8.svg"}
+              className="h-12 w-12 rounded-full object-cover object-top"
+            />
+            <div className="flex flex-col gap-2">
+              <h1 className="text-black text-xm font-medium font-['Space Grotesk'] leading-tight tracking-tight">
+                Dhruv
               </h1>
               <p className="text-black text-xs font-normal font-['Space Grotesk'] leading-none tracking-tight">
                 Listening
@@ -121,124 +255,7 @@ function LastBar() {
             <img src={"/persons/person1.svg"} />
             <div className="flex flex-col gap-2">
               <h1 className="text-black text-xm font-medium font-['Space Grotesk'] leading-tight tracking-tight">
-                Caesar Calls
-              </h1>
-              <p className="text-black text-xs font-normal font-['Space Grotesk'] leading-none tracking-tight">
-                Listening
-              </p>
-            </div>
-
-            <div className="w-8 ml-auto h-6 px-2.5 py-0.5 rounded-xl flex-col justify-center items-center gap-2.5 inline-flex">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g opacity="0.64" clip-path="url(#clip0_2970_4212)">
-                  <path
-                    d="M19.5 12C19.5 12.846 19.359 13.6605 19.101 14.4195L17.88 13.1985C17.9599 12.804 18.0001 12.4025 18 12V10.5C18 10.3011 18.079 10.1103 18.2197 9.96967C18.3603 9.82902 18.5511 9.75 18.75 9.75C18.9489 9.75 19.1397 9.82902 19.2803 9.96967C19.421 10.1103 19.5 10.3011 19.5 10.5V12ZM12 18C13.227 18 14.367 17.6325 15.318 16.9995L16.395 18.078C15.3242 18.8545 14.0663 19.3323 12.75 19.4625V22.5H17.25C17.4489 22.5 17.6397 22.579 17.7803 22.7197C17.921 22.8603 18 23.0511 18 23.25C18 23.4489 17.921 23.6397 17.7803 23.7803C17.6397 23.921 17.4489 24 17.25 24H6.75C6.55109 24 6.36032 23.921 6.21967 23.7803C6.07902 23.6397 6 23.4489 6 23.25C6 23.0511 6.07902 22.8603 6.21967 22.7197C6.36032 22.579 6.55109 22.5 6.75 22.5H11.25V19.4625C9.40003 19.2766 7.68506 18.4101 6.43782 17.0312C5.19058 15.6523 4.49998 13.8593 4.5 12V10.5C4.5 10.3011 4.57902 10.1103 4.71967 9.96967C4.86032 9.82902 5.05109 9.75 5.25 9.75C5.44891 9.75 5.63968 9.82902 5.78033 9.96967C5.92098 10.1103 6 10.3011 6 10.5V12C6 13.5913 6.63214 15.1174 7.75736 16.2426C8.88258 17.3679 10.4087 18 12 18ZM16.5 4.5V11.8185L7.737 3.0555C8.08041 2.04636 8.7708 1.19184 9.68525 0.644053C10.5997 0.0962669 11.6789 -0.10923 12.7307 0.0641455C13.7824 0.237521 14.7386 0.778518 15.4288 1.59082C16.1191 2.40313 16.4986 3.43403 16.5 4.5Z"
-                    fill="black"
-                  />
-                  <path
-                    d="M14.2288 15.9105L7.49975 9.18V12C7.49952 12.788 7.7062 13.5622 8.09911 14.2452C8.49203 14.9282 9.05741 15.4961 9.7387 15.892C10.42 16.288 11.1933 16.4981 11.9813 16.5013C12.7692 16.5045 13.5442 16.3008 14.2288 15.9105ZM2.46875 2.031L20.4688 20.031L21.5308 18.969L3.53075 0.969002L2.46875 2.031Z"
-                    fill="black"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_2970_4212">
-                    <rect width="24" height="24" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
-          </div>
-        </article>{" "}
-        <article className=" items-center">
-          <div className="flex items-center gap-3 w-full">
-            <img src={"/persons/person1.svg"} />
-            <div className="flex flex-col gap-2">
-              <h1 className="text-black text-xm font-medium font-['Space Grotesk'] leading-tight tracking-tight">
-                Caesar Calls
-              </h1>
-              <p className="text-black text-xs font-normal font-['Space Grotesk'] leading-none tracking-tight">
-                Listening
-              </p>
-            </div>
-
-            <div className="w-8 ml-auto h-6 px-2.5 py-0.5 rounded-xl flex-col justify-center items-center gap-2.5 inline-flex">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g opacity="0.64" clip-path="url(#clip0_2970_4212)">
-                  <path
-                    d="M19.5 12C19.5 12.846 19.359 13.6605 19.101 14.4195L17.88 13.1985C17.9599 12.804 18.0001 12.4025 18 12V10.5C18 10.3011 18.079 10.1103 18.2197 9.96967C18.3603 9.82902 18.5511 9.75 18.75 9.75C18.9489 9.75 19.1397 9.82902 19.2803 9.96967C19.421 10.1103 19.5 10.3011 19.5 10.5V12ZM12 18C13.227 18 14.367 17.6325 15.318 16.9995L16.395 18.078C15.3242 18.8545 14.0663 19.3323 12.75 19.4625V22.5H17.25C17.4489 22.5 17.6397 22.579 17.7803 22.7197C17.921 22.8603 18 23.0511 18 23.25C18 23.4489 17.921 23.6397 17.7803 23.7803C17.6397 23.921 17.4489 24 17.25 24H6.75C6.55109 24 6.36032 23.921 6.21967 23.7803C6.07902 23.6397 6 23.4489 6 23.25C6 23.0511 6.07902 22.8603 6.21967 22.7197C6.36032 22.579 6.55109 22.5 6.75 22.5H11.25V19.4625C9.40003 19.2766 7.68506 18.4101 6.43782 17.0312C5.19058 15.6523 4.49998 13.8593 4.5 12V10.5C4.5 10.3011 4.57902 10.1103 4.71967 9.96967C4.86032 9.82902 5.05109 9.75 5.25 9.75C5.44891 9.75 5.63968 9.82902 5.78033 9.96967C5.92098 10.1103 6 10.3011 6 10.5V12C6 13.5913 6.63214 15.1174 7.75736 16.2426C8.88258 17.3679 10.4087 18 12 18ZM16.5 4.5V11.8185L7.737 3.0555C8.08041 2.04636 8.7708 1.19184 9.68525 0.644053C10.5997 0.0962669 11.6789 -0.10923 12.7307 0.0641455C13.7824 0.237521 14.7386 0.778518 15.4288 1.59082C16.1191 2.40313 16.4986 3.43403 16.5 4.5Z"
-                    fill="black"
-                  />
-                  <path
-                    d="M14.2288 15.9105L7.49975 9.18V12C7.49952 12.788 7.7062 13.5622 8.09911 14.2452C8.49203 14.9282 9.05741 15.4961 9.7387 15.892C10.42 16.288 11.1933 16.4981 11.9813 16.5013C12.7692 16.5045 13.5442 16.3008 14.2288 15.9105ZM2.46875 2.031L20.4688 20.031L21.5308 18.969L3.53075 0.969002L2.46875 2.031Z"
-                    fill="black"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_2970_4212">
-                    <rect width="24" height="24" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
-          </div>
-        </article>{" "}
-        <article className=" items-center">
-          <div className="flex items-center gap-3 w-full">
-            <img src={"/persons/person1.svg"} />
-            <div className="flex flex-col gap-2">
-              <h1 className="text-black text-xm font-medium font-['Space Grotesk'] leading-tight tracking-tight">
-                Caesar Calls
-              </h1>
-              <p className="text-black text-xs font-normal font-['Space Grotesk'] leading-none tracking-tight">
-                Listening
-              </p>
-            </div>
-
-            <div className="w-8 ml-auto h-6 px-2.5 py-0.5 rounded-xl flex-col justify-center items-center gap-2.5 inline-flex">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g opacity="0.64" clip-path="url(#clip0_2970_4212)">
-                  <path
-                    d="M19.5 12C19.5 12.846 19.359 13.6605 19.101 14.4195L17.88 13.1985C17.9599 12.804 18.0001 12.4025 18 12V10.5C18 10.3011 18.079 10.1103 18.2197 9.96967C18.3603 9.82902 18.5511 9.75 18.75 9.75C18.9489 9.75 19.1397 9.82902 19.2803 9.96967C19.421 10.1103 19.5 10.3011 19.5 10.5V12ZM12 18C13.227 18 14.367 17.6325 15.318 16.9995L16.395 18.078C15.3242 18.8545 14.0663 19.3323 12.75 19.4625V22.5H17.25C17.4489 22.5 17.6397 22.579 17.7803 22.7197C17.921 22.8603 18 23.0511 18 23.25C18 23.4489 17.921 23.6397 17.7803 23.7803C17.6397 23.921 17.4489 24 17.25 24H6.75C6.55109 24 6.36032 23.921 6.21967 23.7803C6.07902 23.6397 6 23.4489 6 23.25C6 23.0511 6.07902 22.8603 6.21967 22.7197C6.36032 22.579 6.55109 22.5 6.75 22.5H11.25V19.4625C9.40003 19.2766 7.68506 18.4101 6.43782 17.0312C5.19058 15.6523 4.49998 13.8593 4.5 12V10.5C4.5 10.3011 4.57902 10.1103 4.71967 9.96967C4.86032 9.82902 5.05109 9.75 5.25 9.75C5.44891 9.75 5.63968 9.82902 5.78033 9.96967C5.92098 10.1103 6 10.3011 6 10.5V12C6 13.5913 6.63214 15.1174 7.75736 16.2426C8.88258 17.3679 10.4087 18 12 18ZM16.5 4.5V11.8185L7.737 3.0555C8.08041 2.04636 8.7708 1.19184 9.68525 0.644053C10.5997 0.0962669 11.6789 -0.10923 12.7307 0.0641455C13.7824 0.237521 14.7386 0.778518 15.4288 1.59082C16.1191 2.40313 16.4986 3.43403 16.5 4.5Z"
-                    fill="black"
-                  />
-                  <path
-                    d="M14.2288 15.9105L7.49975 9.18V12C7.49952 12.788 7.7062 13.5622 8.09911 14.2452C8.49203 14.9282 9.05741 15.4961 9.7387 15.892C10.42 16.288 11.1933 16.4981 11.9813 16.5013C12.7692 16.5045 13.5442 16.3008 14.2288 15.9105ZM2.46875 2.031L20.4688 20.031L21.5308 18.969L3.53075 0.969002L2.46875 2.031Z"
-                    fill="black"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_2970_4212">
-                    <rect width="24" height="24" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
-          </div>
-        </article>{" "}
-        <article className=" items-center">
-          <div className="flex items-center gap-3 w-full">
-            <img src={"/persons/person1.svg"} />
-            <div className="flex flex-col gap-2">
-              <h1 className="text-black text-xm font-medium font-['Space Grotesk'] leading-tight tracking-tight">
-                Caesar Calls
+                Reyansh
               </h1>
               <p className="text-black text-xs font-normal font-['Space Grotesk'] leading-none tracking-tight">
                 Listening

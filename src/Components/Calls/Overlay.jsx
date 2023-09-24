@@ -1,41 +1,77 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import image from "../../assets/images/ima.svg";
 import Header from "../Header";
 import Message from "../Message";
 import ChatBox from "../ChatBox";
 import Live from "./Live";
 import LastBar from "./LastBar";
-
+const audioFiles = [
+  "/1.m4a",
+  "/2.m4a",
+  "/3.m4a",
+  "/4.m4a",
+  "/5.m4a",
+  "/6.m4a",
+  "/7.m4a",
+  "/8.m4a",
+  "/9.m4a",
+  "/10.m4a",
+];
 function Overlay() {
   const [yes, setYes] = useState(false);
   const [check, setCheck] = useState(false);
 
+  const handleClick = () => {
+    setYes(true);
+    setCheck(true);
+  };
+
+  const audioRef = useRef(null);
+  const currentAudioIndexRef = useRef(0);
+
+  const [track, setTrack] = useState(true);
+
+  const sec = useRef(null);
+
   useEffect(() => {
-    // Event listener to set yes to true on window click
-    const handleClick = () => {
+    sec.current.addEventListener("click", () => {
       setYes(true);
-      setCheck(true);
-    };
-    window.addEventListener("click", handleClick);
+      const playNextAudio = () => {
+        if (currentAudioIndexRef.current < audioFiles.length) {
+          const audio = new Audio(audioFiles[currentAudioIndexRef.current]);
+          audioRef.current = audio;
+          audio.onended = handleAudioEnded;
+          audio.play();
+        }
+      };
 
-    // Use setTimeout to start the interval only when check becomes true
-    let intervalId;
-    const startInterval = () => {
-      intervalId = setInterval(() => {
-        setYes((prevYes) => !prevYes);
-      }, 1000 * 20);
-    };
+      const handleAudioEnded = () => {
+        currentAudioIndexRef.current++;
+        if (currentAudioIndexRef.current < audioFiles.length) {
+          playNextAudio();
+        }
+      };
 
-    // Check if check is true after each click
-    if (check) {
-      startInterval();
-    }
+      const handleClick = () => {
+        currentAudioIndexRef.current = 0; // Reset the index
+        if (audioRef.current) {
+          audioRef.current.pause();
+          audioRef.current.currentTime = 0;
+        }
+        playNextAudio();
+      };
 
-    return () => {
-      window.removeEventListener("click", handleClick);
-      clearInterval(intervalId);
-    };
-  }, [check]);
+      window.addEventListener("click", handleClick);
+
+      return () => {
+        window.removeEventListener("click", handleClick);
+        if (audioRef.current) {
+          audioRef.current.pause();
+          audioRef.current.currentTime = 0;
+        }
+      };
+    });
+  }, []);
 
   if (yes) {
     return (
@@ -51,7 +87,10 @@ function Overlay() {
 
   if (!yes) {
     return (
-      <section className="absolute z-10 w-full right-0 top-0 h-screen bg-[#0606066B]">
+      <section
+        ref={sec}
+        className="absolute z-10 w-full right-0 top-0 h-screen bg-[#0606066B]"
+      >
         <div className="container h-full flex justify-center items-center">
           <article className="h-96 w-96 rounded-3xl border-8 flex flex-col items-center border-sky-100 p-5 bg-white">
             <img

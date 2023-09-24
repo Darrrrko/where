@@ -1,8 +1,9 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Header from "./Components/Header";
 import Message from "./Components/Message";
 import ChatBox from "./Components/ChatBox";
 import Overlay from "./Components/Calls/Overlay";
+import Loader from "./Components/Loader";
 
 const audioFiles = [
   "/1.m4a",
@@ -21,43 +22,62 @@ function App() {
   const audioRef = useRef(null);
   const currentAudioIndexRef = useRef(0);
 
+  const [track, setTrack] = useState(true);
+
+  // useEffect(() => {
+  //   const playNextAudio = () => {
+  //     if (currentAudioIndexRef.current < audioFiles.length) {
+  //       const audio = new Audio(audioFiles[currentAudioIndexRef.current]);
+  //       audioRef.current = audio;
+  //       audio.onended = handleAudioEnded;
+  //       audio.play();
+  //     }
+  //   };
+
+  //   const handleAudioEnded = () => {
+  //     currentAudioIndexRef.current++;
+  //     if (currentAudioIndexRef.current < audioFiles.length) {
+  //       playNextAudio();
+  //     }
+  //   };
+
+  //   const handleClick = () => {
+  //     currentAudioIndexRef.current = 0; // Reset the index
+  //     if (audioRef.current) {
+  //       audioRef.current.pause();
+  //       audioRef.current.currentTime = 0;
+  //     }
+  //     playNextAudio();
+  //   };
+
+  //   window.addEventListener("click", handleClick);
+
+  //   return () => {
+  //     window.removeEventListener("click", handleClick);
+  //     if (audioRef.current) {
+  //       audioRef.current.pause();
+  //       audioRef.current.currentTime = 0;
+  //     }
+  //   };
+  // }, []);
+
+  const [hasPlayed, setHasPlayed] = useState(false);
+
   useEffect(() => {
-    const playNextAudio = () => {
-      if (currentAudioIndexRef.current < audioFiles.length) {
-        const audio = new Audio(audioFiles[currentAudioIndexRef.current]);
-        audioRef.current = audio;
-        audio.onended = handleAudioEnded;
-        audio.play();
-      }
-    };
-
-    const handleAudioEnded = () => {
-      currentAudioIndexRef.current++;
-      if (currentAudioIndexRef.current < audioFiles.length) {
-        playNextAudio();
-      }
-    };
-
     const handleClick = () => {
-      currentAudioIndexRef.current = 0; // Reset the index
-      if (audioRef.current) {
-        audioRef.current.pause();
-        audioRef.current.currentTime = 0;
+      if (!hasPlayed) {
+        new Audio("/call.m4a").play();
+        setHasPlayed(true);
       }
-      playNextAudio();
     };
 
     window.addEventListener("click", handleClick);
 
     return () => {
       window.removeEventListener("click", handleClick);
-      if (audioRef.current) {
-        audioRef.current.pause();
-        audioRef.current.currentTime = 0;
-      }
     };
-  }, []);
-  
+  }, [hasPlayed]);
+
   return (
     <>
       <main
@@ -70,6 +90,7 @@ function App() {
           <Message />
           <ChatBox />
         </div>
+        <Loader />
       </main>
     </>
   );
