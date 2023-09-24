@@ -17,7 +17,7 @@ const audioFiles = [
   "/9.m4a",
   "/10.m4a",
 ];
-function Overlay() {
+function Overlay({ pause }) {
   const [yes, setYes] = useState(false);
   const [check, setCheck] = useState(false);
 
@@ -36,6 +36,7 @@ function Overlay() {
   useEffect(() => {
     sec.current.addEventListener("click", () => {
       setYes(true);
+      pause();
       const playNextAudio = () => {
         if (currentAudioIndexRef.current < audioFiles.length) {
           const audio = new Audio(audioFiles[currentAudioIndexRef.current]);
